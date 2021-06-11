@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Dream Pulse TemplateMo</title>
+<!--
+DREAM PULSE
+https://templatemo.com/tm-536-dream-pulse
+-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="slick/slick.css"/>    
+    <link rel="stylesheet" href="slick/slick-theme.css"/>    
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/templatemo-dream-pulse.css" />
+
+    <style type = "text/css">
+      .wrap 
+      {
+          position: relative;
+          float: left;
+          height: 500px;
+      }
+      
+      .wrap>div
+      {
+          float: left;
+      }
+
+      .wrap>div:nth-of-type(1)
+      {
+          width: 100%;
+      }
+
+      /* 박스 개수별로 만들기 0610*/
+      #box1 
+      {
+          width:160px;
+          height:160px;
+          padding:10px;
+          border:5px;
+      }  
+      #box2 
+      {
+          width:160px;
+          height:160px;
+          padding:10px;
+          border:5px;
+      } 
+
+      #box3
+      {
+          width:160px;
+          height:160px;
+          padding:10px;
+          border:5px;
+      } 
+
+      #box4
+      {
+          width:160px;
+          height:160px;
+          padding:10px;
+          border:5px;
+      } 
+
+      #box5
+      {
+          width:160px;
+          height:160px;
+          padding:10px;
+          border:5px;
+      } 
+
+      #box6
+      {
+          width:160px;
+          height:160px;
+          padding:10px;
+          border:5px;
+      } 
+
+      #box7 
+      {
+          width:160px;
+          height:160px;
+          padding:10px;
+          border:5px;
+      } 
+
+      #box8
+      {
+          width:160px;
+          height:160px;
+          padding:10px;
+          border:5px;
+      } 
+
+      #box9
+      {
+          width:160px;
+          height:160px;
+          padding:10px;
+          border:5px;
+      } 
+
+      #box10
+      {
+          width:160px;
+          height:160px;
+          padding:10px;
+          border:5px;
+      } 
+
+      /* 개수별로 만들기 0610*/
+      #droparea
+      {
+          margin: auto;
+          width: 160px;
+          height: 160px;
+          border: 4px solid Blue;
+          margin-top: 30px;
+      }
+
+      #droparea1
+      {
+          margin: auto;
+          width: 160px;
+          height: 160px;
+          border: 4px solid Blue;
+          margin-top: 30px;
+      }
+
+      #droparea2
+      {
+          margin: auto;
+          width: 160px;
+          height: 160px;
+          border: 4px solid Blue;
+          margin-top: 30px;
+      }
+      
+      #droparea3
+      {
+          margin: auto;
+          width: 160px;
+          height: 160px;
+          border: 4px solid Blue;
+          margin-top: 30px;
+      }
+      
+      #droparea4
+      {
+          margin: auto;
+          width: 160px;
+          height: 160px;
+          border: 4px solid Blue;
+          margin-top: 30px;
+      }
+                  
+      #droparea5
+      {
+          margin: auto;
+          width: 160px;
+          height: 160px;
+          border: 4px solid Blue;
+          margin-top: 30px;
+      }
+
+      #droparea6
+      {
+          margin: auto;
+          width: 160px;
+          height: 160px;
+          border: 4px solid Blue;
+          margin-top: 30px;
+      }
+
+      #droparea7
+      {
+          margin: auto;
+          width: 160px;
+          height: 160px;
+          border: 4px solid Blue;
+          margin-top: 30px;
+      }
+      
+      #droparea8
+      {
+          margin: auto;
+          width: 160px;
+          height: 160px;
+          border: 4px solid Blue;
+          margin-top: 30px;
+      }
+
+      #droparea9
+      {
+          margin: auto;
+          width: 160px;
+          height: 160px;
+          border: 4px solid Blue;
+          margin-top: 30px;
+      }
+
+      #droparea10
+      {
+          margin: auto;
+          width: 160px;
+          height: 160px;
+          border: 4px solid Blue;
+          margin-top: 30px;
+      }
+
+      #result 
+      {
+          width: 200px;
+          height: 200px;
+          border: 3px;
+          resize: none;
+      }
+  </style>
+
+<script Type= "text/javascript" src="http://code.jquery.com/jquery-latest.min.js">
+    
+  function allowDrop(ev) 
+      {
+          ev.preventDefault();
+      }
+
+      function drag(ev)
+      {
+          ev.dataTransfer.setData("text", ev.target.id);
+      }
+
+      function drop(ev) 
+      {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+      }
+      function keydatasave(ev)
+      {
+          setitem()
+      }
+  
+  </script>
+
+  </head>
+  <body>
+    <main class="container-fluid">
+      <div class="row">        
+          <nav id="tmSidebar" class="tm-bg-black-transparent tm-sidebar">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-sidebar-sticky">
+              <div class="tm-brand-box">
+                <div class="tm-double-border-1">
+                  <div class="tm-double-border-2">
+                    <h1 class="tm-brand text-uppercase">IT FIt</h1>
+                  </div>
+                </div>
+              </div>
+
+              <ul id="tmMainNav" class="nav flex-column text-uppercase text-right tm-main-nav">
+                <li class="nav-item">
+                  <a href="#intro" class="nav-link active">
+                    <span class="d-inline-block mr-3">Intro</span>
+                    <span class="d-inline-block tm-white-rect"></span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link">
+                    <span class="d-inline-block mr-3">서비스 소개</span>
+                    <span class="d-inline-block tm-white-rect"></span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#work" class="nav-link">
+                    <span class="d-inline-block mr-3">서비스 시작</span>
+                    <span class="d-inline-block tm-white-rect"></span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#clients" class="nav-link">
+                    <span class="d-inline-block mr-3">데이터 입력</span>
+                    <span class="d-inline-block tm-white-rect"></span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#talk" class="nav-link">
+                    <span class="d-inline-block mr-3">데이터 리스트</span>
+                    <span class="d-inline-block tm-white-rect"></span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav flex-row tm-social-links">
+                <li class="nav-item">
+                  <a href="https://facebook.com" class="nav-link tm-social-link">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://twitter.com" class="nav-link tm-social-link">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://dribbble.com" class="nav-link tm-social-link">
+                    <i class="fab fa-dribbble"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://linkedin.com" class="nav-link tm-social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+              <footer class="text-center text-white small">
+                <p class="mb--0 mb-2">Copyright Hong Seoung Jin</p>
+                <p class="mb-0">Design:
+                  <a rel="nofollow" href="https://templatemo.com" class="tm-footer-link">Template Mo</a>
+                </p>
+              </footer>
+            </div>
+          </nav>
+          
+          <main role="main" class="ml-sm-auto col-12">
+            <div
+              class="parallax-window"
+              data-parallax="scroll"
+              data-image-src="img/dream-pulse-header.jpg">
+              <div class="tm-section-wrap">
+                <section id="intro" class="tm-section">
+                    <div class="tm-bg-white-transparent tm-intro">
+                        <h2 class="tm-section-title mb-5 text-uppercase tm-color-primary">당신을 위한 IT환경 개선.</h2>
+                        <p class="tm-color-gray">
+                          디지털환경은 점점 개선되고 있습니다. 하지만 IT 환경은 생각보다 구축하기 어렵습니다.
+                          지나치게 많은 광고, 불친절한 정보들, 범람한 리뷰...
+                        
+                        </p>
+                        <p class="mb-0 tm-color-gray">
+                          IT FIT과 함께 타이트한 예산에서도 충분한 IT환경을 구축하고자 노력하신다면 더 나아질 수 있습니다.
+                        </p>
+                    </div>              
+                </section>
+            </div>            
+          </div>
+
+          <div class="tm-section-wrap bg-white">
+            <section id="about" class="row tm-section">
+              <div class="col-xl-6">
+                <div class="tm-section-half">    
+                    <div><i class="fas fa-6x fa-balance-scale mb-5 tm-section-icon"></i></div>                        
+                    <h2 class="tm-section-title tm-color-primary mb-5">ItFit 제품정보 수집서비스</h2>
+                    <p class="mb-5">
+                        It Fit 제품 정보 수집 서비스에 오신 것을 환영합니다.<br>
+                        하단의 데이터 입력칸에 데이터를 저장하세요.<br>
+                        데이터 입력칸 아래에서 저장된 데이터 리스트를 확인 && 비교하세요.<br>
+                        (해당 서비스는 쇼핑몰'다나와'에 최적화 되어있습니다.)<br><br>
+
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="tm-section-half">
+                    <p class="mb-5">
+                </div>
+              </div>
+            </section>
+          </div>
+            
+          <div class="tm-section-wrap bg-white">
+            <section id="work" class="row tm-section">
+              <div class="col-12">
+                <div class="w-100 tm-double-border-1 tm-border-gray">
+                    <div class="tm-double-border-2 tm-border-gray tm-box-pad">
+                      <div class="tm-gallery-wrap">
+                          <h2 class="tm-color-primary tm-section-title mb-4 ml-2">Data</h2>
+
+            
+          <div class="tm-section-wrap bg-white">
+            <section id="clients" class="row tm-section">
+              <div class="col-12 tm-section-pad">
+                  <div class="tm-flex-item-left">
+                      <div class="tm-w-80">
+                          <h2 class="tm-color-primary tm-section-title mb-4">데이터 입력</h2>
+                          <div class="wrap">
+
+
+                            <!--중간 페이지 & 데이터 입력칸 -->
+                                <div class="page_up">
+                              
+                                    데이터 이름 : <input type="text" id ="key">
+                                    <br><br><textarea name="asd" id="data" cols="30" rows="10"></textarea><br><br>
+                                    <!--입출력 및 삭제 버튼 설정-->
+                                    <input type="button" onclick="saveData()" value="해당 데이터 저장">
+                                    <input type="button" onclick="loadData()" value="전체 데이터 읽기/갱신">
+                                    <input type="button" onclick="removeData()" value="항목 삭제">
+                                    <input type="button" onclick="removeAll()" value="전체 삭제">
+                                    
+                                    <!--저장되는 데이터 확인박스-->
+                                    <br><br>저장된 데이터 확인:
+                                    <br><br><textarea name="asd" id="result" cols="30" rows="10" readonly></textarea>
+
+                                </div>
+                    
+                      
+                      <div class="row tm-clients-images">
+                        <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
+                            </a>                          
+                          </div>
+                      </div>
+                  </div> 
+              </div>                             
+            </section>
+          </div>
+            
+          <div class="tm-section-wrap bg-white">
+            <section id="talk" class="row tm-section">
+                <div class="col-xl-6 mb-5">
+                  <div class="tm-double-border-1 tm-border-gray">
+                    <div class="tm-double-border-2 tm-border-gray tm-box-pad">
+                        <h2 class="tm-color-primary tm-section-title mb-4">데이터 리스트</h2>
+                        <div class="page_down">
+
+                          <!-- div.droparea.설정 -->
+                          <h4>제품 1번</h4>
+                          <div id="droparea" ondragenter="dragenter(event) "ondragover="dragover(event)" ondrop="drop(event)"></div>
+                          <br><div class="box1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                          <br><textarea name="keybox1" id="result1" cols="30" rows="10" readonly></textarea><br>
+          
+                          <h4>제품 2번</h4>
+                          <div id="droparea1" ondragenter="dragenter(event) "ondragover="dragover(event)" ondrop="drop1(event)"></div>
+                          <br><div class="box2" ondrop="drop1(event)" ondragover="allowDrop(event)"></div>
+                          <br><textarea name="keybox2" id="result2" cols="30" rows="10" readonly></textarea><br>
+          
+                          <h4>제품 3번</h4>
+                          <div id="droparea2" ondragenter="dragenter(event) "ondragover="dragover(event)" ondrop="drop2(event)"></div>
+                          <br><div class="box3" ondrop="drop2(event)" ondragover="allowDrop(event)"></div>
+                          <br><textarea name="keybox3" id="result3" cols="30" rows="10" readonly></textarea><br>
+          
+                          <h4>제품 4번</h4>
+                          <div id="droparea3" ondragenter="dragenter(event) "ondragover="dragover(event)" ondrop="drop3(event)"></div>
+                          <br><div class="box4" ondrop="drop3(event)" ondragover="allowDrop(event)"></div>
+                          <br><textarea name="keybox4" id="result4" cols="30" rows="10" readonly></textarea><br>
+          
+                          <h4>제품 5번</h4>
+                          <div id="droparea4" ondragenter="dragenter(event) "ondragover="dragover(event)" ondrop="drop4(event)"></div>
+                          <br><div class="box5" ondrop="drop4(event)" ondragover="allowDrop(event)"></div>
+                          <br><textarea name="keybox5" id="result5" cols="30" rows="10" readonly></textarea><br>
+          
+                          <h4>제품 6번</h4>
+                          <div id="droparea5" ondragenter="dragenter(event) "ondragover="dragover(event)" ondrop="drop5(event)"></div>
+                          <br><div class="box6" ondrop="drop5(event)" ondragover="allowDrop(event)"></div>
+                          <br><textarea name="keybox6" id="result6" cols="30" rows="10" readonly></textarea><br>
+          
+                          <h4>제품 7번</h4>
+                          <div id="droparea6" ondragenter="dragenter(event) "ondragover="dragover(event)" ondrop="drop6(event)"></div>
+                          <br><div class="box7" ondrop="drop6(event)" ondragover="allowDrop(event)"></div>
+                          <br><textarea name="keybox7" id="result7" cols="30" rows="10" readonly></textarea><br>
+          
+                          <h4>제품 8번</h4>
+                          <div id="droparea7" ondragenter="dragenter(event) "ondragover="dragover(event)" ondrop="drop7(event)"></div>
+                          <br><div class="box8" ondrop="drop7(event)" ondragover="allowDrop(event)"></div>
+                          <br><textarea name="keybox8" id="result8" cols="30" rows="10" readonly></textarea><br>
+          
+                          <h4>제품 9번</h4>
+                          <div id="droparea8" ondragenter="dragenter(event) "ondragover="dragover(event)" ondrop="drop8(event)"></div>
+                          <br><div class="box9" ondrop="drop8(event)" ondragover="allowDrop(event)"></div>
+                          <br><textarea name="keybox9" id="result9" cols="30" rows="10" readonly></textarea><br>
+          
+                          <h4>제품 10번</h4>
+                          <div id="droparea9" ondragenter="dragenter(event) "ondragover="dragover(event)" ondrop="drop9(event)"></div>
+                          <br><div class="box10" ondrop="drop9(event)" ondragover="allowDrop(event)"></div>
+                          <br><textarea name="keybox10" id="result10" cols="30" rows="10" readonly></textarea><br>
+          
+                      </div>
+                     
+                     
+                  </div>
+                        </p>
+                    </div>                    
+                  </div>                  
+                </div>
+                <div class="col-xl-6 mb-5">
+                  <div class="tm-contact-form-wrap">
+                    <form action="" method="POST" class="tm-contact-form">
+
+                
+                        <div class="form-group mb-0">
+                        </div>
+                      </form>
+                  </div>                    
+                </div>
+              </section>
+          </div>
+        </main>        
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/templatemo-scripts.js"></script>
+
+    <script Type= "text/javascript">
+    
+      function saveData()
+      {
+          var key = document.getElementById("key");
+          var data = document.getElementById("data");
+          localStorage.setItem(key.value, data.value);
+          document.getElementById("result").innerHTML = "데이터 저장 완료";
+      }
+      function loadData()
+      {
+          document.getElementById("result1").innerHTML = "";
+          var myKey = localStorage.key(0);
+          document.getElementById("result1").innerHTML += 
+          localStorage.getItem(myKey);
+
+
+          document.getElementById("result2").innerHTML = "";
+          var myKey = localStorage.key(1);
+          document.getElementById("result2").innerHTML += 
+          localStorage.getItem(myKey);
+
+
+          document.getElementById("result3").innerHTML = "";
+          var myKey = localStorage.key(2);
+          document.getElementById("result3").innerHTML += 
+          localStorage.getItem(myKey);
+
+
+          document.getElementById("result4").innerHTML = "";
+          var myKey = localStorage.key(3);
+          document.getElementById("result4").innerHTML += 
+          localStorage.getItem(myKey);
+
+          document.getElementById("result5").innerHTML = "";
+          var myKey = localStorage.key(4);
+          document.getElementById("result5").innerHTML += 
+          localStorage.getItem(myKey);
+
+          document.getElementById("result6").innerHTML = "";
+          var myKey = localStorage.key(5);
+          document.getElementById("result6").innerHTML += 
+          localStorage.getItem(myKey);
+
+          document.getElementById("result7").innerHTML = "";
+          var myKey = localStorage.key(6);
+          document.getElementById("result7").innerHTML += 
+          localStorage.getItem(myKey);
+
+
+          document.getElementById("result8").innerHTML = "";
+          var myKey = localStorage.key(7);
+          document.getElementById("result8").innerHTML += 
+          localStorage.getItem(myKey);
+
+
+          document.getElementById("result9").innerHTML = "";
+          var myKey = localStorage.key(8);
+          document.getElementById("result9").innerHTML += 
+          localStorage.getItem(myKey);
+
+
+          document.getElementById("result10").innerHTML = "";
+          var myKey = localStorage.key(9);
+          document.getElementById("result10").innerHTML += 
+          localStorage.getItem(myKey);
+          
+      }
+      function removeData()
+      {
+          document.getElementById("result").innerHTML = key.value + "데이터 삭제";
+          localStorage.removeItem(key.value);
+      }
+      function removeAll()
+      {
+          document.getElementById("result").innerHTML = key.value + "전체 데이터 삭제";
+          localStorage.clear();
+      }
+      function keylength()
+      {
+          localStorage.keylength;
+      }
+
+      //droparea.script설정
+      // 개수별로 만들어 둘것 0621
+      var droparea = document.getElementById("droparea");
+      var droparea1 = document.getElementById("droparea1");
+      var droparea2 = document.getElementById("droparea2");
+      var droparea3 = document.getElementById("droparea3");
+      var droparea4 = document.getElementById("droparea4");
+      var droparea5 = document.getElementById("droparea5");
+      var droparea6 = document.getElementById("droparea6");
+      var droparea7 = document.getElementById("droparea7");
+      var droparea8 = document.getElementById("droparea8");
+      var droparea9 = document.getElementById("droparea9");
+
+
+      // img 건들지말고 복사만 할것 0621
+      var dropImage = document.createElement("img");
+      var dropImage1 = document.createElement("img");
+      var dropImage2 = document.createElement("img");
+      var dropImage3 = document.createElement("img");
+      var dropImage4 = document.createElement("img");
+      var dropImage5 = document.createElement("img");
+      var dropImage6 = document.createElement("img");
+      var dropImage7 = document.createElement("img");
+      var dropImage8 = document.createElement("img");
+      var dropImage9 = document.createElement("img");
+
+
+
+      function dragenter(e)
+      {
+          e.preventDefault();
+      }
+      function dragover(e)
+      {
+          e.preventDefault();
+      }
+      function drop(e)
+      {
+          var file = e.dataTransfer.files[0];
+          var reader = new FileReader();
+
+          reader.onload = (function(theFile){
+              return function(e){
+              alert("이미지를 가져왔습니다.")
+              dropImage.src = e.target.result;
+              droparea.appendChild(dropImage);
+              };
+          })(file);
+
+      reader.readAsDataURL(file);
+      
+      e.stopPropagation();
+      e.preventDefault();
+      }
+
+      function drop1(e)
+      {
+          var file = e.dataTransfer.files[0];
+          var reader = new FileReader();
+
+          reader.onload = (function(theFile){
+              return function(e){
+              alert("이미지를 가져왔습니다.")
+              dropImage1.src = e.target.result;
+              droparea1.appendChild(dropImage1);
+              };
+          })(file);
+
+      reader.readAsDataURL(file);
+      
+      e.stopPropagation();
+      e.preventDefault();
+      }
+
+      function drop2(e)
+      {
+          var file = e.dataTransfer.files[0];
+          var reader = new FileReader();
+
+          reader.onload = (function(theFile){
+              return function(e){
+              alert("이미지를 가져왔습니다.")
+              dropImage2.src = e.target.result;
+              droparea2.appendChild(dropImage2);
+              };
+          })(file);
+
+      reader.readAsDataURL(file);
+      
+      e.stopPropagation();
+      e.preventDefault();
+      }
+
+      function drop3(e)
+      {
+          var file = e.dataTransfer.files[0];
+          var reader = new FileReader();
+
+          reader.onload = (function(theFile){
+              return function(e){
+              alert("이미지를 가져왔습니다.")
+              dropImage3.src = e.target.result;
+              droparea3.appendChild(dropImage3);
+              };
+          })(file);
+
+      reader.readAsDataURL(file);
+      
+      e.stopPropagation();
+      e.preventDefault();
+      }
+
+      function drop4(e)
+      {
+          var file = e.dataTransfer.files[0];
+          var reader = new FileReader();
+
+          reader.onload = (function(theFile){
+              return function(e){
+              alert("이미지를 가져왔습니다.")
+              dropImage4.src = e.target.result;
+              droparea4.appendChild(dropImage4);
+              };
+          })(file);
+
+      reader.readAsDataURL(file);
+      
+      e.stopPropagation();
+      e.preventDefault();
+      }
+
+      function drop5(e)
+      {
+          var file = e.dataTransfer.files[0];
+          var reader = new FileReader();
+
+          reader.onload = (function(theFile){
+              return function(e){
+              alert("이미지를 가져왔습니다.")
+              dropImage5.src = e.target.result;
+              droparea5.appendChild(dropImage5);
+              };
+          })(file);
+
+      reader.readAsDataURL(file);
+      
+      e.stopPropagation();
+      e.preventDefault();
+      }
+
+      function drop6(e)
+      {
+          var file = e.dataTransfer.files[0];
+          var reader = new FileReader();
+
+          reader.onload = (function(theFile){
+              return function(e){
+              alert("이미지를 가져왔습니다.")
+              dropImage6.src = e.target.result;
+              droparea6.appendChild(dropImage6);
+              };
+          })(file);
+
+      reader.readAsDataURL(file);
+      
+      e.stopPropagation();
+      e.preventDefault();
+      }
+
+      function drop7(e)
+      {
+          var file = e.dataTransfer.files[0];
+          var reader = new FileReader();
+
+          reader.onload = (function(theFile){
+              return function(e){
+              alert("이미지를 가져왔습니다.")
+              dropImage7.src = e.target.result;
+              droparea7.appendChild(dropImage7);
+              };
+          })(file);
+
+      reader.readAsDataURL(file);
+      
+      e.stopPropagation();
+      e.preventDefault();
+      }
+
+      function drop8(e)
+      {
+          var file = e.dataTransfer.files[0];
+          var reader = new FileReader();
+
+          reader.onload = (function(theFile){
+              return function(e){
+              alert("이미지를 가져왔습니다.")
+              dropImage8.src = e.target.result;
+              droparea8.appendChild(dropImage8);
+              };
+          })(file);
+
+      reader.readAsDataURL(file);
+      
+      e.stopPropagation();
+      e.preventDefault();
+      }
+
+      function drop9(e)
+      {
+          var file = e.dataTransfer.files[0];
+          var reader = new FileReader();
+
+          reader.onload = (function(theFile){
+              return function(e){
+              alert("이미지를 가져왔습니다.")
+              dropImage9.src = e.target.result;
+              droparea9.appendChild(dropImage9);
+              };
+          })(file);
+
+      reader.readAsDataURL(file);
+      
+      e.stopPropagation();
+      e.preventDefault();
+      }
+
+
+
+
+  </script>
+
+  </body>
+</html>
